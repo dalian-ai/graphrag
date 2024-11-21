@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../auto_prompt_tuning/">
+        <link rel="prev" href="../init/">
       
       
-        <link rel="next" href="../../query/overview/">
+        <link rel="next" href="../env_vars/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Manual Tuning - GraphRAG</title>
+        <title>Using YAML - GraphRAG</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#manual-prompt-tuning" class="md-skip">
+        <a href="#default-configuration-mode-using-yamljson" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Manual Tuning
+              Using YAML
             
           </span>
         </div>
@@ -251,13 +251,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../overview/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../prompt_tuning/overview/" class="md-tabs__link">
           
   
   Prompt Tuning
@@ -289,11 +287,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../config/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
           
   
   Configuration
@@ -625,28 +625,23 @@
       
   
   
-    
   
   
-  
     
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -657,7 +652,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Prompt Tuning
@@ -671,7 +666,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../prompt_tuning/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -692,7 +687,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../auto_prompt_tuning/" class="md-nav__link">
+      <a href="../../prompt_tuning/auto_prompt_tuning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -710,30 +705,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Manual Tuning
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../prompt_tuning/manual_prompt_tuning/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -742,224 +717,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#indexing-prompts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Indexing Prompts
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Indexing Prompts">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#entityrelationship-extraction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Entity/Relationship Extraction
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Entity/Relationship Extraction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#summarize-entityrelationship-descriptions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summarize Entity/Relationship Descriptions
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Summarize Entity/Relationship Descriptions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#claim-extraction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Claim Extraction
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Claim Extraction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generate-community-reports" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate Community Reports
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Generate Community Reports">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#query-prompts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Query Prompts
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Query Prompts">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#local-search" class="md-nav__link">
-    <span class="md-ellipsis">
-      Local Search
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Local Search">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#global-search" class="md-nav__link">
-    <span class="md-ellipsis">
-      Global Search
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Global Search">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#drift-search" class="md-nav__link">
-    <span class="md-ellipsis">
-      Drift Search
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Drift Search">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1256,23 +1013,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1283,7 +1045,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Configuration
@@ -1297,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1318,7 +1080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/init/" class="md-nav__link">
+      <a href="../init/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1336,10 +1098,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../config/yaml/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1348,6 +1119,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1360,7 +1132,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../config/env_vars/" class="md-nav__link">
+      <a href="../env_vars/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1596,212 +1368,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#indexing-prompts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Indexing Prompts
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Indexing Prompts">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#entityrelationship-extraction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Entity/Relationship Extraction
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Entity/Relationship Extraction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#summarize-entityrelationship-descriptions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Summarize Entity/Relationship Descriptions
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Summarize Entity/Relationship Descriptions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#claim-extraction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Claim Extraction
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Claim Extraction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#generate-community-reports" class="md-nav__link">
-    <span class="md-ellipsis">
-      Generate Community Reports
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Generate Community Reports">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#query-prompts" class="md-nav__link">
-    <span class="md-ellipsis">
-      Query Prompts
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Query Prompts">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#local-search" class="md-nav__link">
-    <span class="md-ellipsis">
-      Local Search
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Local Search">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#global-search" class="md-nav__link">
-    <span class="md-ellipsis">
-      Global Search
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Global Search">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#drift-search" class="md-nav__link">
-    <span class="md-ellipsis">
-      Drift Search
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Drift Search">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokens_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tokens
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1818,73 +1384,284 @@
   
 
 
-<h1 id="manual-prompt-tuning">Manual Prompt Tuning ⚙️</h1>
-<p>The GraphRAG indexer, by default, will run with a handful of prompts that are designed to work well in the broad context of knowledge discovery.
-However, it is quite common to want to tune the prompts to better suit your specific use case.
-We provide a means for you to do this by allowing you to specify a custom prompt file, which will each use a series of token-replacements internally.</p>
-<p>Each of these prompts may be overridden by writing a custom prompt file in plaintext. We use token-replacements in the form of <code>{token_name}</code>, and the descriptions for the available tokens can be found below.</p>
-<h2 id="indexing-prompts">Indexing Prompts</h2>
-<h3 id="entityrelationship-extraction">Entity/Relationship Extraction</h3>
-<p><a href="http://github.com/microsoft/graphrag/blob/main/graphrag/prompts/index/entity_extraction.py">Prompt Source</a></p>
-<h4 id="tokens">Tokens</h4>
+<h1 id="default-configuration-mode-using-yamljson">Default Configuration Mode (using YAML/JSON)</h1>
+<p>The default configuration mode may be configured by using a <code>settings.yml</code> or <code>settings.json</code> file in the data project root. If a <code>.env</code> file is present along with this config file, then it will be loaded, and the environment variables defined therein will be available for token replacements in your configuration document using <code>${ENV_VAR}</code> syntax. We initialize with YML by default in <code>graphrag init</code> but you may use the equivalent JSON form if preferred.</p>
+<p>Many of these config values have defaults. Rather than replicate them here, please refer to the <a href="https://github.com/microsoft/graphrag/blob/main/graphrag/config/defaults.py">constants in the code</a> directly.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a># .env
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>GRAPHRAG_API_KEY=some_api_key
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a># settings.yml
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>llm: 
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  api_key: ${GRAPHRAG_API_KEY}
+</code></pre></div>
+<h1 id="config-sections">Config Sections</h1>
+<h2 id="indexing">Indexing</h2>
+<h3 id="llm">llm</h3>
+<p>This is the base LLM configuration section. Other steps may override this configuration with their own LLM configuration.</p>
+<h4 id="fields">Fields</h4>
 <ul>
-<li><strong>{input_text}</strong> - The input text to be processed.</li>
-<li><strong>{entity_types}</strong> - A list of entity types</li>
-<li><strong>{tuple_delimiter}</strong> - A delimiter for separating values within a tuple. A single tuple is used to represent an individual entity or relationship.</li>
-<li><strong>{record_delimiter}</strong> - A delimiter for separating tuple instances.</li>
-<li><strong>{completion_delimiter}</strong> - An indicator for when generation is complete.</li>
+<li><code>api_key</code> <strong>str</strong> - The OpenAI API key to use.</li>
+<li><code>type</code> <strong>openai_chat|azure_openai_chat|openai_embedding|azure_openai_embedding</strong> - The type of LLM to use.</li>
+<li><code>model</code> <strong>str</strong> - The model name.</li>
+<li><code>max_tokens</code> <strong>int</strong> - The maximum number of output tokens.</li>
+<li><code>request_timeout</code> <strong>float</strong> - The per-request timeout.</li>
+<li><code>api_base</code> <strong>str</strong> - The API base url to use.</li>
+<li><code>api_version</code> <strong>str</strong> - The API version</li>
+<li><code>organization</code> <strong>str</strong> - The client organization.</li>
+<li><code>proxy</code> <strong>str</strong> - The proxy URL to use.</li>
+<li><code>audience</code> <strong>str</strong> - (Azure OpenAI only) The URI of the target Azure resource/service for which a managed identity token is requested. Used if <code>api_key</code> is not defined. Default=<code>https://cognitiveservices.azure.com/.default</code></li>
+<li><code>deployment_name</code> <strong>str</strong> - The deployment name to use (Azure).</li>
+<li><code>model_supports_json</code> <strong>bool</strong> - Whether the model supports JSON-mode output.</li>
+<li><code>tokens_per_minute</code> <strong>int</strong> - Set a leaky-bucket throttle on tokens-per-minute.</li>
+<li><code>requests_per_minute</code> <strong>int</strong> - Set a leaky-bucket throttle on requests-per-minute.</li>
+<li><code>max_retries</code> <strong>int</strong> - The maximum number of retries to use.</li>
+<li><code>max_retry_wait</code> <strong>float</strong> - The maximum backoff time.</li>
+<li><code>sleep_on_rate_limit_recommendation</code> <strong>bool</strong> - Whether to adhere to sleep recommendations (Azure).</li>
+<li><code>concurrent_requests</code> <strong>int</strong> The number of open requests to allow at once.</li>
+<li><code>temperature</code> <strong>float</strong> - The temperature to use.</li>
+<li><code>top_p</code> <strong>float</strong> - The top-p value to use.</li>
+<li><code>n</code> <strong>int</strong> - The number of completions to generate.</li>
 </ul>
-<h3 id="summarize-entityrelationship-descriptions">Summarize Entity/Relationship Descriptions</h3>
-<p><a href="http://github.com/microsoft/graphrag/blob/main/graphrag/prompts/index/summarize_descriptions.py">Prompt Source</a></p>
-<h4 id="tokens_1">Tokens</h4>
+<h3 id="parallelization">parallelization</h3>
+<h4 id="fields_1">Fields</h4>
 <ul>
-<li><strong>{entity_name}</strong> - The name of the entity or the source/target pair of the relationship.</li>
-<li><strong>{description_list}</strong> - A list of descriptions for the entity or relationship.</li>
+<li><code>stagger</code> <strong>float</strong> - The threading stagger value.</li>
+<li><code>num_threads</code> <strong>int</strong> - The maximum number of work threads.</li>
 </ul>
-<h3 id="claim-extraction">Claim Extraction</h3>
-<p><a href="http://github.com/microsoft/graphrag/blob/main/graphrag/prompts/index/claim_extraction.py">Prompt Source</a></p>
-<h4 id="tokens_2">Tokens</h4>
+<h3 id="async_mode">async_mode</h3>
+<p><strong>asyncio|threaded</strong> The async mode to use. Either <code>asyncio</code> or `threaded.</p>
+<h3 id="embeddings">embeddings</h3>
+<h4 id="fields_2">Fields</h4>
 <ul>
-<li><strong>{input_text}</strong> - The input text to be processed.</li>
-<li><strong>{tuple_delimiter}</strong> - A delimiter for separating values within a tuple. A single tuple is used to represent an individual entity or relationship.</li>
-<li><strong>{record_delimiter}</strong> - A delimiter for separating tuple instances.</li>
-<li><strong>{completion_delimiter}</strong> - An indicator for when generation is complete.</li>
-<li><strong>{entity_specs}</strong> - A list of entity types.</li>
-<li><strong>{claim_description}</strong> - Description of what claims should look like. Default is: <code>"Any claims or facts that could be relevant to information discovery."</code></li>
+<li><code>llm</code> (see LLM top-level config)</li>
+<li><code>parallelization</code> (see Parallelization top-level config)</li>
+<li><code>async_mode</code> (see Async Mode top-level config)</li>
+<li><code>batch_size</code> <strong>int</strong> - The maximum batch size to use.</li>
+<li><code>batch_max_tokens</code> <strong>int</strong> - The maximum batch # of tokens.</li>
+<li><code>target</code> <strong>required|all|none</strong> - Determines which set of embeddings to emit.</li>
+<li><code>skip</code> <strong>list[str]</strong> - Which embeddings to skip. Only useful if target=all to customize the list.</li>
+<li><code>vector_store</code> <strong>dict</strong> - The vector store to use. Configured for lancedb by default.<ul>
+<li><code>type</code> <strong>str</strong> - <code>lancedb</code> or <code>azure_ai_search</code>. Default=<code>lancedb</code></li>
+<li><code>db_uri</code> <strong>str</strong> (only for lancedb) - The database uri. Default=<code>storage.base_dir/lancedb</code></li>
+<li><code>url</code> <strong>str</strong> (only for AI Search) - AI Search endpoint</li>
+<li><code>api_key</code> <strong>str</strong> (optional - only for AI Search) - The AI Search api key to use.</li>
+<li><code>audience</code> <strong>str</strong> (only for AI Search) - Audience for managed identity token if managed identity authentication is used.</li>
+<li><code>overwrite</code> <strong>bool</strong> (only used at index creation time) - Overwrite collection if it exist. Default=<code>True</code></li>
+<li><code>container_name</code> <strong>str</strong> - The name of a vector container. This stores all indexes (tables) for a given dataset ingest. Default=<code>default</code></li>
 </ul>
-<p>See the <a href="../../config/overview/">configuration documentation</a> for details on how to change this.</p>
-<h3 id="generate-community-reports">Generate Community Reports</h3>
-<p><a href="http://github.com/microsoft/graphrag/blob/main/graphrag/prompts/index/community_report.py">Prompt Source</a></p>
-<h4 id="tokens_3">Tokens</h4>
-<ul>
-<li><strong>{input_text}</strong> - The input text to generate the report with. This will contain tables of entities and relationships.</li>
+</li>
+<li><code>strategy</code> <strong>dict</strong> - Fully override the text-embedding strategy.</li>
 </ul>
-<h2 id="query-prompts">Query Prompts</h2>
-<h3 id="local-search">Local Search</h3>
-<p><a href="http://github.com/microsoft/graphrag/blob/main/graphrag/prompts/query/local_search_system_prompt.py">Prompt Source</a></p>
-<h4 id="tokens_4">Tokens</h4>
+<h3 id="input">input</h3>
+<h4 id="fields_3">Fields</h4>
 <ul>
-<li><strong>{response_type}</strong> - Describe how the response should look. We default to "multiple paragraphs".</li>
-<li><strong>{context_data}</strong> - The data tables from GraphRAG's index.</li>
+<li><code>type</code> <strong>file|blob</strong> - The input type to use. Default=<code>file</code></li>
+<li><code>file_type</code> <strong>text|csv</strong> - The type of input data to load. Either <code>text</code> or <code>csv</code>. Default is <code>text</code></li>
+<li><code>base_dir</code> <strong>str</strong> - The base directory to read input from, relative to the root.</li>
+<li><code>connection_string</code> <strong>str</strong> - (blob only) The Azure Storage connection string.</li>
+<li><code>storage_account_blob_url</code> <strong>str</strong> - The storage account blob URL to use.</li>
+<li><code>container_name</code> <strong>str</strong> - (blob only) The Azure Storage container name.</li>
+<li><code>file_encoding</code> <strong>str</strong> - The encoding of the input file. Default is <code>utf-8</code></li>
+<li><code>file_pattern</code> <strong>str</strong> - A regex to match input files. Default is <code>.*\.csv$</code> if in csv mode and <code>.*\.txt$</code> if in text mode.</li>
+<li><code>file_filter</code> <strong>dict</strong> - Key/value pairs to filter. Default is None.</li>
+<li><code>source_column</code> <strong>str</strong> - (CSV Mode Only) The source column name.</li>
+<li><code>timestamp_column</code> <strong>str</strong> - (CSV Mode Only) The timestamp column name.</li>
+<li><code>timestamp_format</code> <strong>str</strong> - (CSV Mode Only) The source format.</li>
+<li><code>text_column</code> <strong>str</strong> - (CSV Mode Only) The text column name.</li>
+<li><code>title_column</code> <strong>str</strong> - (CSV Mode Only) The title column name.</li>
+<li><code>document_attribute_columns</code> <strong>list[str]</strong> - (CSV Mode Only) The additional document attributes to include.</li>
 </ul>
-<h3 id="global-search">Global Search</h3>
-<p><a href="http://github.com/microsoft/graphrag/blob/main/graphrag/prompts/query/global_search_map_system_prompt.py">Mapper Prompt Source</a></p>
-<p><a href="http://github.com/microsoft/graphrag/blob/main/graphrag/prompts/query/global_search_reduce_system_prompt.py">Reducer Prompt Source</a></p>
-<p><a href="http://github.com/microsoft/graphrag/blob/main/graphrag/prompts/query/global_search_knowledge_system_prompt.py">Knowledge Prompt Source</a></p>
-<p>Global search uses a map/reduce approach to summarization. You can tune these prompts independently. This search also includes the ability to adjust the use of general knowledge from the model's training.</p>
-<h4 id="tokens_5">Tokens</h4>
+<h3 id="chunks">chunks</h3>
+<h4 id="fields_4">Fields</h4>
 <ul>
-<li><strong>{response_type}</strong> - Describe how the response should look (reducer only). We default to "multiple paragraphs".</li>
-<li><strong>{context_data}</strong> - The data tables from GraphRAG's index.</li>
+<li><code>size</code> <strong>int</strong> - The max chunk size in tokens.</li>
+<li><code>overlap</code> <strong>int</strong> - The chunk overlap in tokens.</li>
+<li><code>group_by_columns</code> <strong>list[str]</strong> - group documents by fields before chunking.</li>
+<li><code>encoding_model</code> <strong>str</strong> - The text encoding model to use. Default is to use the top-level encoding model.</li>
+<li><code>strategy</code> <strong>dict</strong> - Fully override the chunking strategy.</li>
 </ul>
-<h3 id="drift-search">Drift Search</h3>
-<p><a href="http://github.com/microsoft/graphrag/blob/main/graphrag/prompts/query/drift_search_system_prompt.py">Prompt Source</a></p>
-<h4 id="tokens_6">Tokens</h4>
+<h3 id="cache">cache</h3>
+<h4 id="fields_5">Fields</h4>
 <ul>
-<li><strong>{response_type}</strong> - Describe how the response should look. We default to "multiple paragraphs".</li>
-<li><strong>{context_data}</strong> - The data tables from GraphRAG's index.</li>
-<li><strong>{community_reports}</strong> - The most relevant community reports to include in the summarization.</li>
-<li><strong>{query}</strong> - The query text as injected into the context.</li>
+<li><code>type</code> <strong>file|memory|none|blob</strong> - The cache type to use. Default=<code>file</code></li>
+<li><code>connection_string</code> <strong>str</strong> - (blob only) The Azure Storage connection string.</li>
+<li><code>container_name</code> <strong>str</strong> - (blob only) The Azure Storage container name.</li>
+<li><code>base_dir</code> <strong>str</strong> - The base directory to write cache to, relative to the root.</li>
+<li><code>storage_account_blob_url</code> <strong>str</strong> - The storage account blob URL to use.</li>
+</ul>
+<h3 id="storage">storage</h3>
+<h4 id="fields_6">Fields</h4>
+<ul>
+<li><code>type</code> <strong>file|memory|blob</strong> - The storage type to use. Default=<code>file</code></li>
+<li><code>connection_string</code> <strong>str</strong> - (blob only) The Azure Storage connection string.</li>
+<li><code>container_name</code> <strong>str</strong> - (blob only) The Azure Storage container name.</li>
+<li><code>base_dir</code> <strong>str</strong> - The base directory to write output artifacts to, relative to the root.</li>
+<li><code>storage_account_blob_url</code> <strong>str</strong> - The storage account blob URL to use.</li>
+</ul>
+<h3 id="update_index_storage">update_index_storage</h3>
+<h4 id="fields_7">Fields</h4>
+<ul>
+<li><code>type</code> <strong>file|memory|blob</strong> - The storage type to use. Default=<code>file</code></li>
+<li><code>connection_string</code> <strong>str</strong> - (blob only) The Azure Storage connection string.</li>
+<li><code>container_name</code> <strong>str</strong> - (blob only) The Azure Storage container name.</li>
+<li><code>base_dir</code> <strong>str</strong> - The base directory to write output artifacts to, relative to the root.</li>
+<li><code>storage_account_blob_url</code> <strong>str</strong> - The storage account blob URL to use.</li>
+</ul>
+<h3 id="reporting">reporting</h3>
+<h4 id="fields_8">Fields</h4>
+<ul>
+<li><code>type</code> <strong>file|console|blob</strong> - The reporting type to use. Default=<code>file</code></li>
+<li><code>connection_string</code> <strong>str</strong> - (blob only) The Azure Storage connection string.</li>
+<li><code>container_name</code> <strong>str</strong> - (blob only) The Azure Storage container name.</li>
+<li><code>base_dir</code> <strong>str</strong> - The base directory to write reports to, relative to the root.</li>
+<li><code>storage_account_blob_url</code> <strong>str</strong> - The storage account blob URL to use.</li>
+</ul>
+<h3 id="entity_extraction">entity_extraction</h3>
+<h4 id="fields_9">Fields</h4>
+<ul>
+<li><code>llm</code> (see LLM top-level config)</li>
+<li><code>parallelization</code> (see Parallelization top-level config)</li>
+<li><code>async_mode</code> (see Async Mode top-level config)</li>
+<li><code>prompt</code> <strong>str</strong> - The prompt file to use.</li>
+<li><code>entity_types</code> <strong>list[str]</strong> - The entity types to identify.</li>
+<li><code>max_gleanings</code> <strong>int</strong> - The maximum number of gleaning cycles to use.</li>
+<li><code>encoding_model</code> <strong>str</strong> - The text encoding model to use. By default, this will use the top-level encoding model.</li>
+<li><code>strategy</code> <strong>dict</strong> - Fully override the entity extraction strategy.</li>
+</ul>
+<h3 id="summarize_descriptions">summarize_descriptions</h3>
+<h4 id="fields_10">Fields</h4>
+<ul>
+<li><code>llm</code> (see LLM top-level config)</li>
+<li><code>parallelization</code> (see Parallelization top-level config)</li>
+<li><code>async_mode</code> (see Async Mode top-level config)</li>
+<li><code>prompt</code> <strong>str</strong> - The prompt file to use.</li>
+<li><code>max_length</code> <strong>int</strong> - The maximum number of output tokens per summarization.</li>
+<li><code>strategy</code> <strong>dict</strong> - Fully override the summarize description strategy.</li>
+</ul>
+<h3 id="claim_extraction">claim_extraction</h3>
+<h4 id="fields_11">Fields</h4>
+<ul>
+<li><code>enabled</code> <strong>bool</strong> - Whether to enable claim extraction. Off by default, because claim prompts really need user tuning.</li>
+<li><code>llm</code> (see LLM top-level config)</li>
+<li><code>parallelization</code> (see Parallelization top-level config)</li>
+<li><code>async_mode</code> (see Async Mode top-level config)</li>
+<li><code>prompt</code> <strong>str</strong> - The prompt file to use.</li>
+<li><code>description</code> <strong>str</strong> - Describes the types of claims we want to extract.</li>
+<li><code>max_gleanings</code> <strong>int</strong> - The maximum number of gleaning cycles to use.</li>
+<li><code>encoding_model</code> <strong>str</strong> - The text encoding model to use. By default, this will use the top-level encoding model.</li>
+<li><code>strategy</code> <strong>dict</strong> - Fully override the claim extraction strategy.</li>
+</ul>
+<h3 id="community_reports">community_reports</h3>
+<h4 id="fields_12">Fields</h4>
+<ul>
+<li><code>llm</code> (see LLM top-level config)</li>
+<li><code>parallelization</code> (see Parallelization top-level config)</li>
+<li><code>async_mode</code> (see Async Mode top-level config)</li>
+<li><code>prompt</code> <strong>str</strong> - The prompt file to use.</li>
+<li><code>max_length</code> <strong>int</strong> - The maximum number of output tokens per report.</li>
+<li><code>max_input_length</code> <strong>int</strong> - The maximum number of input tokens to use when generating reports.</li>
+<li><code>strategy</code> <strong>dict</strong> - Fully override the community reports strategy.</li>
+</ul>
+<h3 id="cluster_graph">cluster_graph</h3>
+<h4 id="fields_13">Fields</h4>
+<ul>
+<li><code>max_cluster_size</code> <strong>int</strong> - The maximum cluster size to emit.</li>
+<li><code>strategy</code> <strong>dict</strong> - Fully override the cluster_graph strategy.</li>
+</ul>
+<h3 id="embed_graph">embed_graph</h3>
+<h4 id="fields_14">Fields</h4>
+<ul>
+<li><code>enabled</code> <strong>bool</strong> - Whether to enable graph embeddings.</li>
+<li><code>num_walks</code> <strong>int</strong> - The node2vec number of walks.</li>
+<li><code>walk_length</code> <strong>int</strong> - The node2vec walk length.</li>
+<li><code>window_size</code> <strong>int</strong> - The node2vec window size.</li>
+<li><code>iterations</code> <strong>int</strong> - The node2vec number of iterations.</li>
+<li><code>random_seed</code> <strong>int</strong> - The node2vec random seed.</li>
+<li><code>strategy</code> <strong>dict</strong> - Fully override the embed graph strategy.</li>
+</ul>
+<h3 id="umap">umap</h3>
+<h4 id="fields_15">Fields</h4>
+<ul>
+<li><code>enabled</code> <strong>bool</strong> - Whether to enable UMAP layouts.</li>
+</ul>
+<h3 id="snapshots">snapshots</h3>
+<h4 id="fields_16">Fields</h4>
+<ul>
+<li><code>embeddings</code> <strong>bool</strong> - Emit embeddings snapshots to parquet.</li>
+<li><code>graphml</code> <strong>bool</strong> - Emit graph snapshots to GraphML.</li>
+<li><code>raw_entities</code> <strong>bool</strong> - Emit raw entity snapshots to JSON.</li>
+<li><code>top_level_nodes</code> <strong>bool</strong> - Emit top-level-node snapshots to JSON.</li>
+<li><code>transient</code> <strong>bool</strong> - Emit transient workflow tables snapshots to parquet.</li>
+</ul>
+<h3 id="encoding_model">encoding_model</h3>
+<p><strong>str</strong> - The text encoding model to use. Default=<code>cl100k_base</code>.</p>
+<h3 id="skip_workflows">skip_workflows</h3>
+<p><strong>list[str]</strong> - Which workflow names to skip.</p>
+<h2 id="query">Query</h2>
+<h3 id="local_search">local_search</h3>
+<h4 id="fields_17">Fields</h4>
+<ul>
+<li><code>prompt</code> <strong>str</strong> - The prompt file to use.</li>
+<li><code>text_unit_prop</code> <strong>float</strong> - The text unit proportion. </li>
+<li><code>community_prop</code> <strong>float</strong> - The community proportion.</li>
+<li><code>conversation_history_max_turns</code> <strong>int</strong> - The conversation history maximum turns.</li>
+<li><code>top_k_entities</code> <strong>int</strong> - The top k mapped entities.</li>
+<li><code>top_k_relationships</code> <strong>int</strong> - The top k mapped relations.</li>
+<li><code>temperature</code> <strong>float | None</strong> - The temperature to use for token generation.</li>
+<li><code>top_p</code> <strong>float | None</strong> - The top-p value to use for token generation.</li>
+<li><code>n</code> <strong>int | None</strong> - The number of completions to generate.</li>
+<li><code>max_tokens</code> <strong>int</strong> - The maximum tokens.</li>
+<li><code>llm_max_tokens</code> <strong>int</strong> - The LLM maximum tokens.</li>
+</ul>
+<h3 id="global_search">global_search</h3>
+<h4 id="fields_18">Fields</h4>
+<ul>
+<li><code>map_prompt</code> <strong>str</strong> - The mapper prompt file to use.</li>
+<li><code>reduce_prompt</code> <strong>str</strong> - The reducer prompt file to use.</li>
+<li><code>knowledge_prompt</code> <strong>str</strong> - The knowledge prompt file to use.</li>
+<li><code>map_prompt</code> <strong>str | None</strong> - The global search mapper prompt to use.</li>
+<li><code>reduce_prompt</code> <strong>str | None</strong> - The global search reducer to use.</li>
+<li><code>knowledge_prompt</code> <strong>str | None</strong> - The global search general prompt to use.</li>
+<li><code>temperature</code> <strong>float | None</strong> - The temperature to use for token generation.</li>
+<li><code>top_p</code> <strong>float | None</strong> - The top-p value to use for token generation.</li>
+<li><code>n</code> <strong>int | None</strong> - The number of completions to generate.</li>
+<li><code>max_tokens</code> <strong>int</strong> - The maximum context size in tokens.</li>
+<li><code>data_max_tokens</code> <strong>int</strong> - The data llm maximum tokens.</li>
+<li><code>map_max_tokens</code> <strong>int</strong> - The map llm maximum tokens.</li>
+<li><code>reduce_max_tokens</code> <strong>int</strong> - The reduce llm maximum tokens.</li>
+<li><code>concurrency</code> <strong>int</strong> - The number of concurrent requests.</li>
+<li><code>dynamic_search_llm</code> <strong>str</strong> - LLM model to use for dynamic community selection.</li>
+<li><code>dynamic_search_threshold</code> <strong>int</strong> - Rating threshold in include a community report.</li>
+<li><code>dynamic_search_keep_parent</code> <strong>bool</strong> - Keep parent community if any of the child communities are relevant.</li>
+<li><code>dynamic_search_num_repeats</code> <strong>int</strong> - Number of times to rate the same community report.</li>
+<li><code>dynamic_search_use_summary</code> <strong>bool</strong> - Use community summary instead of full_context.</li>
+<li><code>dynamic_search_concurrent_coroutines</code> <strong>int</strong> - Number of concurrent coroutines to rate community reports.</li>
+<li><code>dynamic_search_max_level</code> <strong>int</strong> - The maximum level of community hierarchy to consider if none of the processed communities are relevant.</li>
+</ul>
+<h3 id="drift_search">drift_search</h3>
+<h4 id="fields_19">Fields</h4>
+<ul>
+<li><code>prompt</code> <strong>str</strong> - The prompt file to use.</li>
+<li><code>temperature</code> <strong>float</strong> - The temperature to use for token generation.",</li>
+<li><code>top_p</code> <strong>float</strong> - The top-p value to use for token generation.</li>
+<li><code>n</code> <strong>int</strong> - The number of completions to generate.</li>
+<li><code>max_tokens</code> <strong>int</strong> - The maximum context size in tokens.</li>
+<li><code>data_max_tokens</code> <strong>int</strong> - The data llm maximum tokens.</li>
+<li><code>concurrency</code> <strong>int</strong> - The number of concurrent requests.</li>
+<li><code>drift_k_followups</code> <strong>int</strong> - The number of top global results to retrieve.</li>
+<li><code>primer_folds</code> <strong>int</strong> - The number of folds for search priming.</li>
+<li><code>primer_llm_max_tokens</code> <strong>int</strong> - The maximum number of tokens for the LLM in primer.</li>
+<li><code>n_depth</code> <strong>int</strong> - The number of drift search steps to take.</li>
+<li><code>local_search_text_unit_prop</code> <strong>float</strong> - The proportion of search dedicated to text units.</li>
+<li><code>local_search_community_prop</code> <strong>float</strong> - The proportion of search dedicated to community properties.</li>
+<li><code>local_search_top_k_mapped_entities</code> <strong>int</strong> - The number of top K entities to map during local search.</li>
+<li><code>local_search_top_k_relationships</code> <strong>int</strong> - The number of top K relationships to map during local search.</li>
+<li><code>local_search_max_data_tokens</code> <strong>int</strong> - The maximum context size in tokens for local search.</li>
+<li><code>local_search_temperature</code> <strong>float</strong> - The temperature to use for token generation in local search.</li>
+<li><code>local_search_top_p</code> <strong>float</strong> - The top-p value to use for token generation in local search.</li>
+<li><code>local_search_n</code> <strong>int</strong> - The number of completions to generate in local search.</li>
+<li><code>local_search_llm_max_gen_tokens</code> <strong>int</strong> - The maximum number of generated tokens for the LLM in local search.</li>
 </ul>
 
 
@@ -1915,7 +1692,7 @@ We provide a means for you to do this by allowing you to specify a custom prompt
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../auto_prompt_tuning/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Auto Tuning">
+          <a href="../init/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Init Command">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1925,20 +1702,20 @@ We provide a means for you to do this by allowing you to specify a custom prompt
                 Previous
               </span>
               <div class="md-ellipsis">
-                Auto Tuning
+                Init Command
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../query/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+          <a href="../env_vars/" class="md-footer__link md-footer__link--next" aria-label="Next: Using Env Vars">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Overview
+                Using Env Vars
               </div>
             </div>
             <div class="md-footer__button md-icon">
